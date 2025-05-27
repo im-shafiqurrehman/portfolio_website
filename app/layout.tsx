@@ -13,7 +13,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-}
+};
+
+<head>
+  <link rel="icon" href="/favicon.png" type="image/png" />
+</head>
 
 export default function RootLayout({
   children,

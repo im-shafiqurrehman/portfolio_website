@@ -555,7 +555,7 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8 animate-in fade-in-50 duration-1000">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center text-white text-4xl font-bold shadow-2xl animate-pulse hover:scale-110 transform transition-all duration-500 hover:rotate-3">
-                SR
+                <img src="assets/shafiq.png" alt="" />
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-in slide-in-from-bottom-4 duration-1000 delay-200">
                 Hi, I'm{" "}
