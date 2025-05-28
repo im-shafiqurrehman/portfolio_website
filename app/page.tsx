@@ -602,7 +602,7 @@ export default function Portfolio() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-2 animate-in slide-in-from-bottom-4 duration-1000 delay-1000">
-              {skills.slice(0, 8).map((skill, index) => (
+              {skills.slice(0, 11).map((skill, index) => (
                 <Badge
                   key={skill}
                   variant="secondary"
@@ -1001,7 +1001,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        
+
       </section>
       {/* Contact Section */}
       <section
