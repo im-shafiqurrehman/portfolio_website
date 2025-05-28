@@ -1096,7 +1096,7 @@ export default function Portfolio() {
               </div>
 
               {/* Contact Form */}
-              <Card className="animate-in slide-in-from-right duration-700 delay-600 border-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500">
+              <Card className="animate-in slide-in-from-right delay-600 border-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500">
                 <CardHeader className="p-4 md:p-6">
                   <CardTitle className="text-xl md:text-2xl">Send Me a Message</CardTitle>
                   <CardDescription className="text-xs md:text-sm">
