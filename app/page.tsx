@@ -416,7 +416,7 @@ export default function Portfolio() {
       )}
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 transition-all duration-300 animate-in slide-in-from-top duration-500">
+      <nav className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 transition-all duration-300 animate-in slide-in-from-top">
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <div className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent animate-pulse">
@@ -606,7 +606,7 @@ export default function Portfolio() {
                 <Badge
                   key={skill}
                   variant="secondary"
-                  className="text-sm hover:scale-110 transform transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:rotate-1 animate-in fade-in duration-500"
+                  className="text-sm hover:scale-110 transform transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:rotate-1 animate-in fade-in "
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {skill}
@@ -626,7 +626,7 @@ export default function Portfolio() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 animate-in slide-in-from-left duration-700 delay-200 hover:-rotate-1">
+              <Card className="hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 animate-in slide-in-from-left  delay-200 hover:-rotate-1">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <GraduationCap className="w-5 h-5 text-blue-600 animate-bounce" />
@@ -648,7 +648,7 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/50 dark:to-blue-950/50 animate-in slide-in-from-right duration-700 delay-400 hover:rotate-1">
+              <Card className="hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/50 dark:to-blue-950/50 animate-in slide-in-from-right  delay-400 hover:rotate-1">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Briefcase className="w-5 h-5 text-green-600 animate-pulse" />
@@ -672,7 +672,7 @@ export default function Portfolio() {
             </div>
 
             <div className="grid md:grid-cols-4 gap-6 mb-12">
-              <Card className="text-center hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-950/50 dark:to-orange-950/50 animate-in slide-in-from-bottom duration-700 delay-200 hover:rotate-2">
+              <Card className="text-center hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-950/50 dark:to-orange-950/50 animate-in slide-in-from-bottom  delay-200 hover:rotate-2">
                 <CardContent className="pt-6">
                   <Trophy className="w-12 h-12 mx-auto mb-4 text-yellow-600 animate-bounce" />
                   <h3 className="text-2xl font-bold mb-2">200+</h3>
@@ -680,7 +680,7 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/50 dark:to-pink-950/50 animate-in slide-in-from-bottom duration-700 delay-400 hover:-rotate-2">
+              <Card className="text-center hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/50 dark:to-pink-950/50 animate-in slide-in-from-bottom  delay-400 hover:-rotate-2">
                 <CardContent className="pt-6">
                   <Code className="w-12 h-12 mx-auto mb-4 text-purple-600 animate-pulse" />
                   <h3 className="text-2xl font-bold mb-2">50+</h3>
@@ -688,7 +688,7 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/50 dark:to-cyan-950/50 animate-in slide-in-from-bottom duration-700 delay-600 hover:rotate-2">
+              <Card className="text-center hover:shadow-xl transition-all  hover:scale-105 transform border-0 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/50 dark:to-cyan-950/50 animate-in slide-in-from-bottom duration-700 delay-600 hover:rotate-2">
                 <CardContent className="pt-6">
                   <Globe
                     className="w-12 h-12 mx-auto mb-4 text-blue-600 animate-spin"
@@ -699,7 +699,7 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center hover:shadow-xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/50 dark:to-emerald-950/50 animate-in slide-in-from-bottom duration-700 delay-800 hover:-rotate-2">
+              <Card className="text-center hover:shadow-xl transition-all  hover:scale-105 transform border-0 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/50 dark:to-emerald-950/50 animate-in slide-in-from-bottom duration-700 delay-800 hover:-rotate-2">
                 <CardContent className="pt-6">
                   <Award className="w-12 h-12 mx-auto mb-4 text-green-600 animate-pulse" />
                   <h3 className="text-2xl font-bold mb-2">3rd</h3>
@@ -708,7 +708,7 @@ export default function Portfolio() {
               </Card>
             </div>
 
-            <Card className="hover:shadow-xl transition-all duration-500 border-0 bg-gradient-to-br from-slate-50 to-gray-50 dark:from-slate-950/50 dark:to-gray-950/50 animate-in slide-in-from-bottom duration-700 delay-1000 hover:scale-[1.02]">
+            <Card className="hover:shadow-xl transition-all duration-500 border-0 bg-gradient-to-br from-slate-50 to-gray-50 dark:from-slate-950/50 dark:to-gray-950/50 animate-in slide-in-from-bottom  delay-1000 hover:scale-[1.02]">
               <CardHeader>
                 <CardTitle className="animate-in slide-in-from-left duration-500">Technical Skills</CardTitle>
               </CardHeader>
@@ -783,7 +783,7 @@ export default function Portfolio() {
                 return (
                   <Card
                     key={index}
-                    className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-950 overflow-hidden animate-in slide-in-from-bottom duration-700 hover:-rotate-1"
+                    className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-950 overflow-hidden animate-in slide-in-from-bottom hover:-rotate-1"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <CardContent className="p-8 text-center">
@@ -826,7 +826,7 @@ export default function Portfolio() {
                   .map((project, index) => (
                     <Card
                       key={index}
-                      className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-blue-950 overflow-hidden animate-in slide-in-from-bottom duration-700 hover:rotate-1"
+                      className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-blue-950 overflow-hidden animate-in slide-in-from-bottom  hover:rotate-1"
                       style={{ animationDelay: `${index * 200}ms` }}
                     >
                       <div className="relative h-48 overflow-hidden">
@@ -870,7 +870,7 @@ export default function Portfolio() {
                             <Badge
                               key={tech}
                               variant="outline"
-                              className="text-xs hover:bg-blue-100 dark:hover:bg-blue-900 transition-all duration-300 hover:scale-110 animate-in fade-in duration-300"
+                              className="text-xs hover:bg-blue-100 dark:hover:bg-blue-900 transition-all duration-300 hover:scale-110 animate-in fade-in "
                               style={{ animationDelay: `${techIndex * 50}ms` }}
                             >
                               {tech}
@@ -920,7 +920,7 @@ export default function Portfolio() {
                   .map((project, index) => (
                     <Card
                       key={index}
-                      className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-950 overflow-hidden animate-in slide-in-from-bottom duration-700 hover:-rotate-1"
+                      className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 transform border-0 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-950 overflow-hidden animate-in slide-in-from-bottom hover:-rotate-1"
                       style={{ animationDelay: `${index * 200}ms` }}
                     >
                       <div className="relative h-48 overflow-hidden">
@@ -1000,12 +1000,13 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
 
+        
+      </section>
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-blue-950/50 dark:via-purple-950/50 dark:to-pink-950/50 relative"
+        className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-blue-950/50 dark:via-purple-950/50 dark:to-pink-950/50 relative overflow-hidden"
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -1017,75 +1018,77 @@ export default function Portfolio() {
               technology and innovative solutions.
             </p>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Contact Information */}
               <div className="animate-in slide-in-from-left duration-700 delay-400">
-                <h3 className="text-2xl font-semibold mb-6">Let's Work Together</h3>
-                <p className="text-muted-foreground mb-8">
+                <h3 className="text-xl md:text-2xl font-semibold mb-6">Let's Work Together</h3>
+                <p className="text-muted-foreground mb-8 text-sm md:text-base">
                   I'm always open to discussing new opportunities, collaborations, and exciting projects. Whether you
                   need a full-stack developer or want to contribute to open-source, let's connect!
                 </p>
 
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4 p-4 rounded-lg bg-white/50 dark:bg-gray-900/50 hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-white" />
+                <div className="space-y-4 md:space-y-6">
+                  <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-lg bg-white/50 dark:bg-gray-900/50 hover:scale-105 transition-transform duration-300">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold">Email</h4>
-                      <p className="text-muted-foreground">shafiqurrehmanbscs2022@gmail.com</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-4 p-4 rounded-lg bg-white/50 dark:bg-gray-900/50 hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Phone</h4>
-                      <p className="text-muted-foreground">+92 326 4139439</p>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-sm md:text-base">Email</h4>
+                      <p className="text-muted-foreground text-xs md:text-sm break-all">
+                        shafiqurrehmanbscs2022@gmail.com
+                      </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4 p-4 rounded-lg bg-white/50 dark:bg-gray-900/50 hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-white" />
+                  <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-lg bg-white/50 dark:bg-gray-900/50 hover:scale-105 transition-transform duration-300">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold">Location</h4>
-                      <p className="text-muted-foreground">Lahore, Pakistan</p>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-sm md:text-base">Phone</h4>
+                      <p className="text-muted-foreground text-xs md:text-sm">+92 326 4139439</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-lg bg-white/50 dark:bg-gray-900/50 hover:scale-105 transition-transform duration-300">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-sm md:text-base">Location</h4>
+                      <p className="text-muted-foreground text-xs md:text-sm">Lahore, Pakistan</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-8">
-                  <h4 className="font-semibold mb-4">Follow Me</h4>
-                  <div className="flex gap-4">
+                <div className="mt-6 md:mt-8">
+                  <h4 className="font-semibold mb-4 text-sm md:text-base">Follow Me</h4>
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                     <Button
                       variant="outline"
-                      size="lg"
-                      className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 transform hover:scale-105 transition-all duration-300"
+                      size="sm"
+                      className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 transform hover:scale-105 transition-all duration-300 text-xs md:text-sm"
                       onClick={() => window.open("https://github.com/im-shafiqurrehman", "_blank")}
                     >
-                      <Github className="w-5 h-5" />
+                      <Github className="w-4 h-4" />
                       GitHub
                     </Button>
                     <Button
                       variant="outline"
-                      size="lg"
-                      className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 transform hover:scale-105 transition-all duration-300"
+                      size="sm"
+                      className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 transform hover:scale-105 transition-all duration-300 text-xs md:text-sm"
                       onClick={() => window.open("https://www.linkedin.com/in/im-shafiqurrehman/", "_blank")}
                     >
-                      <Linkedin className="w-5 h-5" />
+                      <Linkedin className="w-4 h-4" />
                       LinkedIn
                     </Button>
                     <Button
                       variant="outline"
-                      size="lg"
-                      className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 transform hover:scale-105 transition-all duration-300"
+                      size="sm"
+                      className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 transform hover:scale-105 transition-all duration-300 text-xs md:text-sm"
                       onClick={() => window.open("https://leetcode.com/u/im-shafiqurrehman/", "_blank")}
                     >
-                      <Code className="w-5 h-5" />
+                      <Code className="w-4 h-4" />
                       LeetCode
                     </Button>
                   </div>
@@ -1094,17 +1097,19 @@ export default function Portfolio() {
 
               {/* Contact Form */}
               <Card className="animate-in slide-in-from-right duration-700 delay-600 border-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500">
-                <CardHeader>
-                  <CardTitle className="text-2xl">Send Me a Message</CardTitle>
-                  <CardDescription>
+                <CardHeader className="p-4 md:p-6">
+                  <CardTitle className="text-xl md:text-2xl">Send Me a Message</CardTitle>
+                  <CardDescription className="text-xs md:text-sm">
                     Fill out the form below and I'll get back to you as soon as possible.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
+                <CardContent className="p-4 md:p-6 pt-0">
+                  <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Your Name *</Label>
+                        <Label htmlFor="name" className="text-xs md:text-sm">
+                          Your Name *
+                        </Label>
                         <Input
                           id="name"
                           name="name"
@@ -1113,11 +1118,13 @@ export default function Portfolio() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="transition-all duration-300 focus:scale-105"
+                          className="transition-all duration-300 focus:scale-105 text-sm"
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="email">Your Email *</Label>
+                        <Label htmlFor="email" className="text-xs md:text-sm">
+                          Your Email *
+                        </Label>
                         <Input
                           id="email"
                           name="email"
@@ -1126,13 +1133,15 @@ export default function Portfolio() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="transition-all duration-300 focus:scale-105"
+                          className="transition-all duration-300 focus:scale-105 text-sm"
                         />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="subject">Subject *</Label>
+                      <Label htmlFor="subject" className="text-xs md:text-sm">
+                        Subject *
+                      </Label>
                       <Input
                         id="subject"
                         name="subject"
@@ -1141,21 +1150,23 @@ export default function Portfolio() {
                         value={formData.subject}
                         onChange={handleInputChange}
                         required
-                        className="transition-all duration-300 focus:scale-105"
+                        className="transition-all duration-300 focus:scale-105 text-sm"
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message">Message *</Label>
+                      <Label htmlFor="message" className="text-xs md:text-sm">
+                        Message *
+                      </Label>
                       <Textarea
                         id="message"
                         name="message"
                         placeholder="Tell me about your project..."
-                        rows={6}
+                        rows={5}
                         value={formData.message}
                         onChange={handleInputChange}
                         required
-                        className="transition-all duration-300 focus:scale-105 resize-none"
+                        className="transition-all duration-300 focus:scale-105 resize-none text-sm"
                       />
                     </div>
 
@@ -1163,16 +1174,16 @@ export default function Portfolio() {
                       type="submit"
                       size="lg"
                       disabled={isSubmitting}
-                      className="w-full gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+                      className="w-full gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 hover:shadow-xl text-sm md:text-base"
                     >
                       {isSubmitting ? (
                         <>
-                          <Loader2 className="w-5 h-5 animate-spin" />
+                          <Loader2 className="w-4 h-4 md:w-5 md:h-5 animate-spin" />
                           Sending Message...
                         </>
                       ) : (
                         <>
-                          <Send className="w-5 h-5" />
+                          <Send className="w-4 h-4 md:w-5 md:h-5" />
                           Send Message
                         </>
                       )}
