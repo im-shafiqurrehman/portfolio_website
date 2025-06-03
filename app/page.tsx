@@ -172,7 +172,7 @@ export default function Portfolio() {
         "Industry-level LMS with authentication, Redis caching, and RTK state management for optimal performance.",
       tech: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "Redis", "RTK Query"],
       image: "assets/lms.png",
-      demo: "https://lms-demo-platform.vercel.app/",
+      demo: "https://e-learning-lms-frontend-theta.vercel.app/",
       source: null,
       isPaid: false,
       featured: true,
@@ -1231,7 +1231,7 @@ export default function Portfolio() {
       <footer className="py-8 border-t bg-background/50 backdrop-blur-sm animate-in slide-in-from-bottom duration-500">
         <div className="container mx-auto px-4">
           <div className="text-center text-muted-foreground">
-            <p>&copy; 2024 Shafiq Ur Rehman. All rights reserved.</p>
+            <p>&copy; 2025 Shafiq Ur Rehman. All rights reserved.</p>
           </div>
         </div>
       </footer>
