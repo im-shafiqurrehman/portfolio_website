@@ -160,7 +160,7 @@ export default function Portfolio() {
         "Developed a paid full-stack e-commerce application with comprehensive authentication and Redux state management.",
       tech: ["Next.js", "Node.js", "Express", "MongoDB", "Redux", "Stripe"],
       image: "assets/multivendor.png",
-      demo: "https://multivendor-ecommerce-demo.vercel.app/",
+      demo: "https://www.halfattire.com/",
       source: null,
       isPaid: true,
       featured: true,
