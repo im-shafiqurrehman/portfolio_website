@@ -3,6 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -62,7 +63,33 @@ export default function Portfolio() {
   const [showScrollTop, setShowScrollTop] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showCVModal, setShowCVModal] = useState(false)
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState<string | null>(null)
   const { toast } = useToast()
+
+  const router = useRouter()
+
+  const handleCaseStudyClick = (projectTitle: string) => {
+    router.push(`/case-studies/${projectTitle.toLowerCase().replace(/ /g, '-')}`)
+  }
+
+  const CaseStudyDialog = () => {
+    if (!selectedCaseStudy) return null
+    
+    return (
+      <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+        <div className="bg-white dark:bg-gray-900 p-6 rounded-lg max-w-2xl w-full mx-4">
+          <h2 className="text-2xl font-bold mb-4">{selectedCaseStudy} - Case Study</h2>
+          <p>It is a case study of this project</p>
+          <Button 
+            className="mt-4" 
+            onClick={() => setSelectedCaseStudy(null)}
+          >
+            Close
+          </Button>
+        </div>
+      </div>
+    )
+  }
 
   // Contact form state
   const [formData, setFormData] = useState({
@@ -149,7 +176,7 @@ export default function Portfolio() {
       tech: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "Redis", "RTK Query"],
       image: "assets/horizon.png",
       demo: "https://www.horizonimpactfundmanagers.com/",
-      source: null,
+      source: "https://github.com/im-shafiqurrehman/HorizonImpactFundManagers",
       isPaid: true,
       featured: true,
       date: "March 2025",
@@ -161,10 +188,11 @@ export default function Portfolio() {
       tech: ["Next.js", "Node.js", "Express", "MongoDB", "Redux", "Stripe"],
       image: "assets/multivendor.png",
       demo: "https://www.halfattire.com/",
-      source: null,
+      source: null,  // Keep it private
       isPaid: true,
       featured: true,
-      date: "April – May 2025",
+      date: "April – July 2025",
+      caseStudy: true
     },
     {
       title: "Learning Management System",
@@ -173,10 +201,11 @@ export default function Portfolio() {
       tech: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "Redis", "RTK Query"],
       image: "assets/lms.png",
       demo: "https://e-learning-lms-frontend-theta.vercel.app/",
-      source: null,
+      source: "https://github.com/im-shafiqurrehman/E-LEARNING_LMS",
       isPaid: false,
       featured: true,
       date: "Jan – Feb 2025",
+      caseStudy: true
     },
     {
       title: "Real Estate Platform",
@@ -224,7 +253,7 @@ export default function Portfolio() {
       tech: ["React", "Node.js", "Express", "MongoDB"],
       image: "assets/food.png",
       demo: "https://main--swiftbite.netlify.app/",
-      source: null,
+      source: "https://github.com/im-shafiqurrehman/React-Marco-website",
       isPaid: false,
       featured: false,
       date: "2024",
@@ -877,29 +906,37 @@ export default function Portfolio() {
                             </Badge>
                           ))}
                         </div>
-                        <div className="flex gap-2">
-                          <Button
-                            size="sm"
-                            className="gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 transition-all duration-300"
-                            onClick={() => window.open(project.demo!, "_blank")}
-                          >
-                            <Globe className="w-3 h-3" />
-                            Free Demo
-                          </Button>
-                          {project.source ? (
+                        <div className="flex flex-col gap-2">
+                          <div className="flex gap-2">
+                            <Button
+                              size="sm"
+                              className="gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 transition-all duration-300"
+                              onClick={() => window.open(project.demo!, "_blank")}
+                            >
+                              <Globe className="w-3 h-3" />
+                              Free Demo
+                            </Button>
+                            {project.source && (
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 hover:scale-105 transition-all duration-300"
+                                onClick={() => window.open(project.source!, "_blank")}
+                              >
+                                <Github className="w-3 h-3 hover:rotate-12 transition-transform duration-300" />
+                                Source Code
+                              </Button>
+                            )}
+                          </div>
+                          {project.caseStudy && (
                             <Button
                               variant="outline"
                               size="sm"
                               className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 hover:scale-105 transition-all duration-300"
-                              onClick={() => window.open(project.source!, "_blank")}
+                              onClick={() => router.push(`/${project.title.toLowerCase().replace(/ /g, '-')}-case-study`)}
                             >
-                              <Github className="w-3 h-3 hover:rotate-12 transition-transform duration-300" />
-                              Source Code
-                            </Button>
-                          ) : (
-                            <Button variant="outline" size="sm" disabled className="gap-2">
-                              <Lock className="w-3 h-3" />
-                              {project.isPaid ? "Paid Project" : "Private"}
+                              <FileText className="w-3 h-3" />
+                              View Case Study
                             </Button>
                           )}
                         </div>
@@ -1235,6 +1272,7 @@ export default function Portfolio() {
           </div>
         </div>
       </footer>
+      {selectedCaseStudy && <CaseStudyDialog />}
     </div>
   )
 }
