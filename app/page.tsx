@@ -927,13 +927,32 @@ export default function Portfolio() {
                                 Source Code
                               </Button>
                             )}
+                            {project.isPaid && !project.source && (
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                className="gap-2 hover:bg-yellow-50 dark:hover:bg-yellow-950 hover:scale-105 transition-all duration-300 border-yellow-300 text-yellow-700 dark:text-yellow-300"
+                                onClick={() => window.open("mailto:shafiqurrehmanbscs2022@gmail.com?subject=Paid Source Code Request&body=Hello! I'm interested in purchasing the source code for the " + project.title + " project.", "_blank")}
+                              >
+                                <Lock className="w-3 h-3" />
+                                Paid Source
+                              </Button>
+                            )}
                           </div>
                           {project.caseStudy && (
                             <Button
                               variant="outline"
                               size="sm"
                               className="gap-2 hover:bg-blue-50 dark:hover:bg-blue-950 hover:scale-105 transition-all duration-300"
-                              onClick={() => router.push(`/${project.title.toLowerCase().replace(/ /g, '-')}-case-study`)}
+                              onClick={() => {
+                                if (project.title === "E-Commerce Platform") {
+                                  router.push("/half-attire")
+                                } else if (project.title === "Learning Management System") {
+                                  router.push("/learning-management-system")
+                                } else {
+                                  router.push(`/${project.title.toLowerCase().replace(/ /g, '-')}-case-study`)
+                                }
+                              }}
                             >
                               <FileText className="w-3 h-3" />
                               View Case Study
@@ -1022,6 +1041,16 @@ export default function Portfolio() {
                             >
                               <Github className="w-3 h-3 hover:rotate-12 transition-transform duration-300" />
                               Source Code
+                            </Button>
+                          ) : project.isPaid ? (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="gap-2 hover:bg-yellow-50 dark:hover:bg-yellow-950 hover:scale-105 transition-all duration-300 border-yellow-300 text-yellow-700 dark:text-yellow-300"
+                              onClick={() => window.open("mailto:shafiqurrehmanbscs2022@gmail.com?subject=Paid Source Code Request&body=Hello! I'm interested in purchasing the source code for the " + project.title + " project.", "_blank")}
+                            >
+                              <Lock className="w-3 h-3" />
+                              Paid Source
                             </Button>
                           ) : (
                             <Button variant="outline" size="sm" disabled className="gap-2">
