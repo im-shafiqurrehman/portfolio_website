@@ -125,7 +125,7 @@ export default function ELearningCaseStudy() {
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              EduPlatform Pro
+              Elearning
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-4">
               E-Learning Platform Case Study
@@ -178,7 +178,7 @@ export default function ELearningCaseStudy() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4 text-blue-600">Project Overview</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      EduPlatform Pro represents a comprehensive e-learning ecosystem designed to revolutionize online education. 
+                      Elearning represents a comprehensive e-learning ecosystem designed to revolutionize online education. 
                       Built with modern MERN stack technologies, this platform seamlessly integrates course management, payment processing, 
                       and real-time communication features. The system supports multiple user roles including students, instructors, and administrators, 
                       providing each with tailored interfaces and functionalities to ensure optimal learning and teaching experiences.

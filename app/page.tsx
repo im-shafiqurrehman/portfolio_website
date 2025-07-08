@@ -195,7 +195,7 @@ export default function Portfolio() {
       caseStudy: true
     },
     {
-      title: "Learning Management System",
+      title: "Elearning",
       description:
         "Industry-level LMS with authentication, Redis caching, and RTK state management for optimal performance.",
       tech: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "Redis", "RTK Query"],
@@ -947,7 +947,7 @@ export default function Portfolio() {
                               onClick={() => {
                                 if (project.title === "E-Commerce Platform") {
                                   router.push("/half-attire")
-                                } else if (project.title === "Learning Management System") {
+                                } else if (project.title === "Elearning") {
                                   router.push("/learning-management-system")
                                 } else {
                                   router.push(`/${project.title.toLowerCase().replace(/ /g, '-')}-case-study`)

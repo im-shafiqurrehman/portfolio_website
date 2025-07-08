@@ -69,7 +69,7 @@ export default function LMSCaseStudy() {
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Learning Management System
+              Elearning
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               An industry-level LMS platform with advanced features, Redis caching, and RTK state management for optimal performance and user experience.
@@ -98,7 +98,7 @@ export default function LMSCaseStudy() {
             <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/assets/lms.png"
-                alt="Learning Management System"
+                alt="Elearning Platform"
                 fill
                 className="object-cover"
               />
